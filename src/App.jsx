@@ -1,13 +1,12 @@
-import "@mantine/core/styles.css";
+import React from 'react';
+import MallaCurricular from './components/MallaCurricular';
 
-import { MantineProvider } from "@mantine/core";
+const App = () => {
+    return (
+        <div>
+            <MallaCurricular />
+        </div>
+    );
+};
 
-import DocLinks from "./components/DocLinks";
-
-export default function App() {
-  return (
-    <MantineProvider>
-      <DocLinks />
-    </MantineProvider>
-  );
-}
+export default App;

@@ -1,13 +1,13 @@
-import "@mantine/core/styles.css";
-
 import { MantineProvider } from "@mantine/core";
-
-import DocLinks from "./components/DocLinks";
+import Inicio from "./paginas/inicio/inicio.jsx";
+import ProveedorAutenticacion from "./contexto/ContextoAutenticacion.jsx";
 
 export default function App() {
   return (
     <MantineProvider>
-      <DocLinks />
+      <ProveedorAutenticacion>
+       <Inicio />
+      </ProveedorAutenticacion>
     </MantineProvider>
   );
 }
